@@ -1,7 +1,25 @@
 <div>
         Welcome {{name}}!!!
 </div>
+<div class="container" *ngIf="errorMessage">
 
-<div>
+    <h2>{{errorMessage}} !!</h2>
+
+</div>
+
+<div class="container">
     click here to gog to todos <a routerLink = '/todos'>here</a>
+</div>
+
+<div class="container">
+
+    Click here to get the message from web service
+    <button (click)="getWelcomeMessageWithPathVariable()" class="btn btn-success">Get the message</button>
+
+</div>
+
+<div class="container" *ngIf="welcomeMessage">
+
+    <h2> Welcome message {{welcomeMessage}}</h2>
+
 </div>
