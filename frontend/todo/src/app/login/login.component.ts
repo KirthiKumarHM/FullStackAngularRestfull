@@ -45,8 +45,7 @@ export class LoginComponent implements OnInit {
         console.log(error)
         this.invalidLogin = true
       }
-    )
-      
+    )      
   }
 
    // console.log('After ' + this.harcodedAuthentication.isUserLoggedIn())
